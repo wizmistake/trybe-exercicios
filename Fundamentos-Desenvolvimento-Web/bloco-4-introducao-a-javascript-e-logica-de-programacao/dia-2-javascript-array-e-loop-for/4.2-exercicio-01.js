@@ -29,3 +29,10 @@ for (let valor of numbers) {
   console.log(valor);
 }
 // Questão 01 - ok
+
+let soma = 0;
+for (let sum of numbers) {
+  soma += sum; 
+}
+console.log('A soma de todos os valores do array "numbers" é:', soma);
+// Questão 02 - ok
