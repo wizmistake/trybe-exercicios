@@ -53,3 +53,17 @@ console.log('Array "numbers" ordenado de forma crescente:',crescenteNumbers);
 decrescenteNumbers.sort(comparar2); // Ordenei o novoNumbers com auxílio da função "comparar2()".
 console.log('Array "numbers" ordenado de forma decrescente:',decrescenteNumbers);
 // Questão 02 - ok
+
+let novoNumbers = [];
+let aux = 0;
+for (let n = 0; n < numbers.length; n += 1) {
+  if (n !== numbers.length-1) {
+    aux = numbers[n] * numbers[n+1];
+    novoNumbers.push(aux);
+  } else {
+    aux = numbers[n] * 2;
+    novoNumbers.push(aux);
+  }
+}
+console.log(novoNumbers);
+// Questão 03 - ok
