@@ -36,3 +36,7 @@ for (let sum of numbers) {
 }
 console.log('A soma de todos os valores do array "numbers" é:', soma);
 // Questão 02 - ok
+
+let mediaAritmetica = (soma / numbers.length); // Vou utilizar a a variável "soma", pois ela já contém a soma de todos os elementos do array "numbers".
+console.log('A média aritmética do array "numbers" é:',mediaAritmetica);
+// Questão 03 - ok
