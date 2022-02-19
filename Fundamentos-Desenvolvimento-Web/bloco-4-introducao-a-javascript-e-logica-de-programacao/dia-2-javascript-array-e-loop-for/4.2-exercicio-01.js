@@ -40,3 +40,10 @@ console.log('A soma de todos os valores do array "numbers" é:', soma);
 let mediaAritmetica = (soma / numbers.length); // Vou utilizar a a variável "soma", pois ela já contém a soma de todos os elementos do array "numbers".
 console.log('A média aritmética do array "numbers" é:',mediaAritmetica);
 // Questão 03 - ok
+
+if (mediaAritmetica > 20) {
+  console.log('Valor maior que 20');
+} else {
+  console.log('Valor menor OU igual a 20');
+}
+// Questão 04 - ok
