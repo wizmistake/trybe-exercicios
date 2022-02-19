@@ -65,7 +65,7 @@
         */
        function descricao() {
          let contador;
-         let texto = 'Me vejo com os mesmos olhos, que hoje, não conseguem exergar o potencial que existe no esforço que faço todos os dias.';
+         let texto = 'Me vejo com os mesmos olhos que, hoje não conseguem enxergar o potencial que existe no esforço que faço todos os dias.';
          contador = document.getElementsByTagName("p");
          for (let i = 1; i < contador.length; i += 1) {
           document.getElementsByTagName("p")[i].innerHTML = '';
@@ -84,11 +84,18 @@
        function maiusculo() {
         document.getElementsByTagName("p")[0].innerHTML = document.getElementsByTagName("p")[0].innerHTML.toUpperCase();
        }
+       function exibir() {
+         let cont = document.getElementsByTagName("p");
+         for (let n = 0; n < cont.length; n += 1){
+           console.log(document.getElementsByTagName("p")[n].innerText);
+         }
+       }
        descricao(); // questão 01 - ok
        mudaCor(); // questão 02 - ok
        mudaCorCentro(); // questão 03 - ok
        corrigir(); // questão 04 - ok
        maiusculo(); // questão 05 - ok
+       exibir(); // questão 06 - ok
     </script>
   </body>
 </html>
