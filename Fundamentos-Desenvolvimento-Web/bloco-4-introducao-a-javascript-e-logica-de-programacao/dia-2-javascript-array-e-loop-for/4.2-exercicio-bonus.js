@@ -38,9 +38,18 @@ function comparar1(a, b) { // Utilizei para ordenar de forma crescente.
   return a - b;
 }
 
+function comparar2(a, b) { // Utilizei para ordenar de forma decrescente.
+  return b - a;
+}
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let crescenteNumbers = numbers.slice(); // Fiz uma cópia do array "numbers".
+let decrescenteNumbers = numbers.slice();
 
 crescenteNumbers.sort(comparar1); // Ordenei o novoNumbers com auxílio da função "comparar1()".
 console.log('Array "numbers" ordenado de forma crescente:',crescenteNumbers);
 // Questão 01 - ok
+
+decrescenteNumbers.sort(comparar2); // Ordenei o novoNumbers com auxílio da função "comparar2()".
+console.log('Array "numbers" ordenado de forma decrescente:',decrescenteNumbers);
+// Questão 02 - ok
