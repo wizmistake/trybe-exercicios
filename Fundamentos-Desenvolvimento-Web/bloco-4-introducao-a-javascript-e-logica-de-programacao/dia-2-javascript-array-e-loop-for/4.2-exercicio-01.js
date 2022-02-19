@@ -49,9 +49,9 @@ if (mediaAritmetica > 20) {
 // Questão 04 - ok
 
 let maior = 0;
-for (let comparador of numbers) {
-  if (comparador >= maior) {
-    maior = comparador;
+for (let compararMaior of numbers) {
+  if (compararMaior >= maior) {
+    maior = compararMaior;
   }
 }
 console.log('O maior valor do array "numbers" é:', maior);
@@ -70,4 +70,13 @@ if (quantosImpar === 0) {
   console.log('Existem', quantosImpar, 'números ímpares dentro do array "numbers"');
 }
 // Questão 06 - ok
+
+let menor = maior; // Vou utilizar a variável "maior", pois ela já contém o maior número do array "numbers".
+for (let compararMenor of numbers) {
+  if (menor > compararMenor) {
+    menor = compararMenor;
+  }
+}
+console.log('O menor valor do array "numbers" é:', menor);
+// Questão 07 - ok
 
