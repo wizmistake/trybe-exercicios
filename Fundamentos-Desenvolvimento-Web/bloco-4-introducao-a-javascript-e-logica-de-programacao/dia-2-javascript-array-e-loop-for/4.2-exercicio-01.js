@@ -57,3 +57,17 @@ for (let comparador of numbers) {
 console.log('O maior valor do array "numbers" é:', maior);
 // Questão 05 - ok
 
+let quantosImpar = 0;
+for (let impar of numbers) {
+  if (impar % 2 != 0) {
+    console.log('Valor ímpar:',impar);
+    quantosImpar += 1;
+  }
+}
+if (quantosImpar === 0) {
+  console.log('Nenhum valor ímpar encontrado.');
+} else {
+  console.log('Existem', quantosImpar, 'números ímpares dentro do array "numbers"');
+}
+// Questão 06 - ok
+
