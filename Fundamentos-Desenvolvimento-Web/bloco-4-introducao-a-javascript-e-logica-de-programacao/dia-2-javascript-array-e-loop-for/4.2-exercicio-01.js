@@ -12,7 +12,7 @@
 
   4. Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";
 
-  5. Utilizando for , descubra qual o maior valor contido no array e imprima-o;
+  5. Utilizando for, descubra qual o maior valor contido no array e imprima-o;
   
   6. Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
   
@@ -47,3 +47,13 @@ if (mediaAritmetica > 20) {
   console.log('Valor menor OU igual a 20');
 }
 // Questão 04 - ok
+
+let maior = 0;
+for (let comparador of numbers) {
+  if (comparador >= maior) {
+    maior = comparador;
+  }
+}
+console.log('O maior valor do array "numbers" é:', maior);
+// Questão 05 - ok
+
