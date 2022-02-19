@@ -80,3 +80,10 @@ for (let compararMenor of numbers) {
 console.log('O menor valor do array "numbers" é:', menor);
 // Questão 07 - ok
 
+let novoArray = [];
+for (let n = 1; n <= 25; n += 1) {
+  novoArray.push(n);
+}
+console.log('Imprimindo o novo array:',novoArray);
+// Questão 08 - ok
+
