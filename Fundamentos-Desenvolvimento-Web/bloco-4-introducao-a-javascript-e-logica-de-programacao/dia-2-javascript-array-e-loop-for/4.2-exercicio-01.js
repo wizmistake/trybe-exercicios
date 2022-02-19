@@ -87,3 +87,9 @@ for (let n = 1; n <= 25; n += 1) {
 console.log('Imprimindo o novo array:',novoArray);
 // Questão 08 - ok
 
+let resultado = 0.00;
+for (let z = 0; z < novoArray.length; z += 1) {
+  resultado = (novoArray[z] / 2);
+  console.log('O resultado da divisão de', novoArray[z], 'por 2 é:', resultado);
+}
+// Questão 09 - ok
