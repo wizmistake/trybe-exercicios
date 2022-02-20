@@ -18,6 +18,9 @@ console.log(document.getElementById('elementoOndeVoceEsta'));
 document.getElementById('elementoOndeVoceEsta').parentNode.style.color = 'red';
 console.log(document.getElementById('elementoOndeVoceEsta').parentNode);
 
-//Questão 3 - ok
+// Questão 3 - ok
 document.getElementById('primeiroFilhoDoFilho').innerHTML = 'Exercício da Trybe. Não é difícil, mas é trabalhoso kkkkk.'
 console.log(document.getElementById('primeiroFilhoDoFilho'));
+
+// Questão 4 - ok
+console.log(document.getElementById('pai').firstChild);
