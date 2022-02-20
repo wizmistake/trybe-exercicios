@@ -28,5 +28,8 @@ console.log('4.',document.getElementById("pai").firstElementChild);
 // Questão 5 - ok
 console.log('5.',document.getElementById("elementoOndeVoceEsta").previousElementSibling);
 
-// Questão 6 - 
+// Questão 6 - ok
 console.log('6.',document.getElementById("elementoOndeVoceEsta").nextSibling);
+
+// Questão 7 - ok
+console.log('7.',document.getElementById("elementoOndeVoceEsta").nextElementSibling);
