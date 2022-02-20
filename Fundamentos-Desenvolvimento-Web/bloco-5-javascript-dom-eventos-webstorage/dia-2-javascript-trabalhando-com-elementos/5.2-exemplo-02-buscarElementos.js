@@ -12,18 +12,21 @@
 */
 
 // Questão 1 - ok
-console.log(document.getElementById("elementoOndeVoceEsta"));
+console.log('1.',document.getElementById("elementoOndeVoceEsta"));
 
 // Questão 2 - ok
 document.getElementById("elementoOndeVoceEsta").parentNode.style.color = 'red';
-console.log(document.getElementById('elementoOndeVoceEsta').parentNode);
+console.log('2.',document.getElementById('elementoOndeVoceEsta').parentNode);
 
 // Questão 3 - ok
 document.getElementById("primeiroFilhoDoFilho").innerHTML = 'Exercício da Trybe. Não é difícil, mas é trabalhoso kkkkk.'
-console.log(document.getElementById("primeiroFilhoDoFilho"));
+console.log('3.',document.getElementById("primeiroFilhoDoFilho"));
 
 // Questão 4 - ok
-console.log(document.getElementById("pai").firstElementChild);
+console.log('4.',document.getElementById("pai").firstElementChild);
 
 // Questão 5 - ok
-console.log(document.getElementById("elementoOndeVoceEsta").previousElementSibling);
+console.log('5.',document.getElementById("elementoOndeVoceEsta").previousElementSibling);
+
+// Questão 6 - 
+console.log('6.',document.getElementById("elementoOndeVoceEsta").nextSibling);
