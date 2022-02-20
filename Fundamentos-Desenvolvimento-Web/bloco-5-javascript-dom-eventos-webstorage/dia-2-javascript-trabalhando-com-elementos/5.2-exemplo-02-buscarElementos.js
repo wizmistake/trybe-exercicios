@@ -14,3 +14,7 @@
 // Questão 1 - ok
 console.log(document.getElementById('elementoOndeVoceEsta'))
 
+// Questão 2 - ok
+document.getElementById('elementoOndeVoceEsta').parentNode.style.color = 'red';
+console.log(document.getElementById('elementoOndeVoceEsta').parentNode)
+
