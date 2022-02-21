@@ -34,5 +34,5 @@ console.log('6.',document.getElementById("elementoOndeVoceEsta").nextSibling);
 // Questão 7 - ok
 console.log('7.',document.getElementById("elementoOndeVoceEsta").nextElementSibling);
 
-// Questão 8 - 
+// Questão 8 - ok
 console.log('8.',document.getElementById("pai").lastElementChild.previousElementSibling);
