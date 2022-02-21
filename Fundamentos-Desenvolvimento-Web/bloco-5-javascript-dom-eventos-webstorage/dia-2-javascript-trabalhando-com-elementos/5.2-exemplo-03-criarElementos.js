@@ -10,7 +10,15 @@
 // Questão 1 - ok
 let elementoPai = document.getElementById('pai');
 let irmao = document.createElement('section');
-irmao.innerText = 'elementoIrmao';
+irmao.innerText = 'Irmao do elementoOndeVoceEsta';
 elementoPai.appendChild(irmao);
+
+
+// Questão 2 - 
+let voce = document.getElementById('elementoOndeVoceEsta');
+let voceFilho = document.createElement('section');
+voceFilho.innerText = 'Filho do elementoOndeVoceEsta';
+voce.appendChild(voceFilho);
+
 
 console.log(elementoPai);
