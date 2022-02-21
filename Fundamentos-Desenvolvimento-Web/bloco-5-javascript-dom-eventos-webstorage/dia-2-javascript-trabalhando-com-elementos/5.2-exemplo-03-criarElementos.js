@@ -28,4 +28,10 @@ filhoFilhoOndeVc.innerText = 'Filho do primeiroFilhoDoFilho';
 filhoOndeVc.appendChild(filhoFilhoOndeVc); 
 
 
+// Questão 4 - ok
+let ultimo = filhoOndeVc.lastElementChild;
+let busca = ultimo.parentElement.parentElement;
+console.log('4.',busca.nextElementSibling);
+
+
 console.log(elementoPai);
