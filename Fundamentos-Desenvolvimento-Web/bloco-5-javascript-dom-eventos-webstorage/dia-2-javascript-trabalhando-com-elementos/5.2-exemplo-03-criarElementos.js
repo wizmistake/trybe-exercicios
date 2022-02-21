@@ -14,11 +14,18 @@ irmao.innerText = 'Irmao do elementoOndeVoceEsta';
 elementoPai.appendChild(irmao);
 
 
-// Questão 2 - 
+// Questão 2 - ok
 let voce = document.getElementById('elementoOndeVoceEsta');
 let voceFilho = document.createElement('section');
 voceFilho.innerText = 'Filho do elementoOndeVoceEsta';
 voce.appendChild(voceFilho);
+
+
+// Questão 3 - ok
+let filhoOndeVc = document.getElementById('primeiroFilhoDoFilho');
+let filhoFilhoOndeVc = document.createElement('section');
+filhoFilhoOndeVc.innerText = 'Filho do primeiroFilhoDoFilho';
+filhoOndeVc.appendChild(filhoFilhoOndeVc); 
 
 
 console.log(elementoPai);
