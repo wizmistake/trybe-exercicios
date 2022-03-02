@@ -70,11 +70,40 @@
       */
 
       // Questão 1 - ok
-      let h1Texto = 'Exercício 5.2 - JavaScript DOM como filho da tag body';
-      let corpo = document.getElementsByTagName('body');
-      corpo = document.createElement('h1');
-      corpo.innerText = h1Texto;
-      console.log(corpo);
+      let h1Texto = document.createElement('h1');
+      h1Texto.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(h1Texto);
+      
+      
+      // Questão 2 - ok
+      let main = document.createElement('main');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+
+
+      // Questão 3 - ok
+      let sectionA = document.createElement('section');
+      sectionA.className = 'center-content';
+      main.appendChild(sectionA);
+
+      // Questão 4 - ok
+      let paragrafo = document.createElement('p');
+      paragrafo.innerText = 'Texto do elemento/tag <p> inserido dinamicamente.';
+      sectionA.appendChild(paragrafo);
+
+
+      // Questão 5 - ok
+      let sectionB = document.createElement('section');
+      sectionB.className = 'left-content';
+      main.appendChild(sectionB);
+
+
+      // Questão 6 - ok
+      let sectionC = document.createElement('section');
+      sectionC.className = 'right-content';
+      main.appendChild(sectionC);
+
+      
 
     </script>
   </body>
