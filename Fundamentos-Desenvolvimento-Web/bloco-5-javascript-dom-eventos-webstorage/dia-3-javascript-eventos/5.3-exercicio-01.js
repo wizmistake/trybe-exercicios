@@ -52,3 +52,10 @@ firstLi.addEventListener('click', trocaClasse);
 secondLi.addEventListener('click', trocaClasse);
 thirdLi.addEventListener('click', trocaClasse);
 
+
+// Questão 3 - 
+function descricao(event) {
+  let techClass = document.querySelector(".tech");
+  techClass.innerText = event.target.value;
+}
+input.addEventListener('input', descricao);
