@@ -12,25 +12,6 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // .tech {transform: translateY(-20px);}
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-function classChangeFirstLi(event) {
-  firstLi.className = 'tech';
-  secondLi.className = '';
-  thirdLi.className = '';
-}
-function classChangeSecondLi(event) {
-  firstLi.className = '';
-  secondLi.className = 'tech';
-  thirdLi.className = '';
-}
-function classChangeThirdLi(event) {
-  firstLi.className = '';
-  secondLi.className = '';
-  thirdLi.className = 'tech';
-}
-firstLi.addEventListener('click', classChangeFirstLi);
-secondLi.addEventListener('click', classChangeSecondLi);
-thirdLi.addEventListener('click', classChangeThirdLi);
-
 
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
@@ -59,3 +40,15 @@ firstLi.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
+
+
+// Questão 2 e 2.1 - ok
+function trocaClasse(event) {
+  let techClass = document.querySelector('.tech');
+  techClass.classList.remove('tech');
+  event.target.classList.add('tech');
+}
+firstLi.addEventListener('click', trocaClasse);
+secondLi.addEventListener('click', trocaClasse);
+thirdLi.addEventListener('click', trocaClasse);
+
