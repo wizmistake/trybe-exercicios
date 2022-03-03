@@ -53,9 +53,16 @@ secondLi.addEventListener('click', trocaClasse);
 thirdLi.addEventListener('click', trocaClasse);
 
 
-// Questão 3 - 
+// Questão 3 - ok
 function descricao(event) {
   let techClass = document.querySelector(".tech");
   techClass.innerText = event.target.value;
 }
 input.addEventListener('input', descricao);
+
+
+// Questão 4 e 4.1 - ok
+function redirecionar(event) {
+  window.open('https://github.com/wizmistake/trybe-exercicios', '_blank');
+}
+myWebpage.addEventListener('dblclick', redirecionar);
