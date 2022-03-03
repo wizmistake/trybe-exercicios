@@ -98,7 +98,15 @@ function createDaysOfTheMonth() {
   let monthDays = document.getElementById('days');
   for (let i = 0; i < dezDaysList.length; i += 1) {
     monthDaysList = document.createElement('li');
-    monthDaysList.innerHTML = dezDaysList[i];
+    let dias = dezDaysList[i];
+    monthDaysList.innerHTML = dias;
+    monthDaysList.className = 'day';
+    if (dias == 24 || dias == 25 || dias == 31) {
+      monthDaysList.className = 'day holiday';
+    }
+    if (dias == 4 || dias == 11 || dias == 18 || dias == 25) {
+      monthDaysList.className = 'day friday';
+    }
     monthDays.appendChild(monthDaysList);
   }
 }
