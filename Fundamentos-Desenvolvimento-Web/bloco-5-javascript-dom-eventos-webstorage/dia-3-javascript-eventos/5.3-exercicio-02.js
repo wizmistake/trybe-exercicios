@@ -95,17 +95,17 @@ createDaysOfTheWeek();
 // Questão 1 - ok
 function createDaysOfTheMonth() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-  let monthDays = document.getElementById('days');
+  let monthDays = document.querySelector('#days');
   for (let i = 0; i < dezDaysList.length; i += 1) {
     monthDaysList = document.createElement('li');
     let dias = dezDaysList[i];
     monthDaysList.innerHTML = dias;
-    monthDaysList.className = 'day';
+    monthDaysList.classList.add('day');
     if (dias == 24 || dias == 25 || dias == 31) {
-      monthDaysList.className = 'day holiday';
+      monthDaysList.classList.add('holiday');
     }
     if (dias == 4 || dias == 11 || dias == 18 || dias == 25) {
-      monthDaysList.className = 'day friday';
+      monthDaysList.classList.add('friday');
     }
     monthDays.appendChild(monthDaysList);
   }
@@ -120,9 +120,29 @@ function botaoFeriado(valor) {
   botaoFeriado.type = 'button';
   botaoFeriado.value = 'Feriados';
   botaoFeriado.id = 'btn-holiday';
+  //botaoFeriado.style.backgroundColor = 'rgb(238,238,238)';
   let botoes = document.querySelector('.buttons-container');
   botoes.appendChild(botaoFeriado);
 }
 botaoFeriado();
+
+
+// Questão 3 - RESOLVER DEPOIS
+let btnFeriado = document.querySelector('#btn-holiday');
+function corFeriado() {
+  if (btnFeriado.corFeriado === true) {
+    btnFeriado.removeAttribute('disabled');
+  } else {
+    btnFeriado.setAttribute('disabled', 'disabled');
+  }
+  let feriados = document.querySelectorAll('.holiday');
+  let botaoFeriado = document.getElementById('btn-holiday');
+  feriados.s = 'pink';
+  //console.log(feriados);
+}
+btnFeriado.addEventListener('click', corFeriado);
+
+
+
 
 
