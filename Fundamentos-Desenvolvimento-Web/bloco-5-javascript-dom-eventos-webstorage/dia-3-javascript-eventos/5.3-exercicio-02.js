@@ -111,3 +111,18 @@ function createDaysOfTheMonth() {
   }
 }
 createDaysOfTheMonth();
+
+
+// Questão 2 - ok
+valor = "Feriados";
+function botaoFeriado(valor) {
+  let botaoFeriado = document.createElement('input');
+  botaoFeriado.type = 'button';
+  botaoFeriado.value = 'Feriados';
+  botaoFeriado.id = 'btn-holiday';
+  let botoes = document.querySelector('.buttons-container');
+  botoes.appendChild(botaoFeriado);
+}
+botaoFeriado();
+
+
