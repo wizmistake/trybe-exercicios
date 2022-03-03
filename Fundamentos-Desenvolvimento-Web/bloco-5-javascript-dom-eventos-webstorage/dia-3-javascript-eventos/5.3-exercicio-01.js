@@ -66,3 +66,14 @@ function redirecionar(event) {
   window.open('https://github.com/wizmistake/trybe-exercicios', '_blank');
 }
 myWebpage.addEventListener('dblclick', redirecionar);
+
+
+// Questão 5 - ok
+function mudaCor(event) {
+  myWebpage.style.color = 'red';
+}
+function voltaCor(event) {
+  myWebpage.style.color = 'white';
+}
+myWebpage.addEventListener('mouseover', mudaCor);
+myWebpage.addEventListener('mouseleave', voltaCor);
