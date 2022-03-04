@@ -16,3 +16,18 @@ const fatorial = (valor) => {
   return resultado;
 }
 console.log(fatorial(7));
+
+
+/*
+  2. Crie uma função que receba uma frase e retorne qual a maior palavra.
+*/
+
+const maiorPalavra = (frase) => {
+  const palavras = frase.split(' ');
+  let maiorPalavra = '';
+  for (let i = 0; i <= palavras.length; i += 1) {
+    maiorPalavra.length < palavras[i].length ? maiorPalavra = palavras[i] : false;
+  }
+  return maiorPalavra;
+}
+console.log(maiorPalavra('Crie uma função que receba uma frase e retorne qual a maior palavra'));
