@@ -65,3 +65,22 @@ const substituirX = (string) => {
   return resultado;
 }
 console.log(substituirX('Tryber x aqui!'));
+
+let global = ['HTML', 'CSS', 'JS', 'Xadrez', 'Lógica'];
+
+/*
+  Função 2 : Escreva uma função que vai receber a string retornada da Função 1 como parâmetro. Essa função deve concatenar as skills do array global à string que foi passada para a Função 2 via parâmetro. Você deve ordenar os skills em ordem alfabética. Sua função deve retornar essa nova string .
+    Exemplo:
+      "Tryber x aqui! Minhas cinco principais habilidades são:
+
+      JavaScript;
+      HTML; ... #goTrybe".
+*/
+
+const concatenar = (algo) => {
+  let param = substituirX('Tryber x aqui!');
+  let texto = `Minhas ${global.length} principais habilidades são:`
+  let result = global.sort();
+  return `${param} ${texto} ${result}`;
+}
+console.log(concatenar());
