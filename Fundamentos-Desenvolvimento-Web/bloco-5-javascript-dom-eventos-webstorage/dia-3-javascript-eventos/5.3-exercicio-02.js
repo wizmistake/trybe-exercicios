@@ -129,18 +129,26 @@ botaoFeriado();
 
 // Questão 3 - RESOLVER DEPOIS
 let btnFeriado = document.querySelector('#btn-holiday');
-function corFeriado() {
-  if (btnFeriado.corFeriado === true) {
-    btnFeriado.removeAttribute('disabled');
-  } else {
-    btnFeriado.setAttribute('disabled', 'disabled');
-  }
+function corFeriado(event) {
   let feriados = document.querySelectorAll('.holiday');
-  let botaoFeriado = document.getElementById('btn-holiday');
-  feriados.s = 'pink';
-  //console.log(feriados);
+  feriados.style.backgroundColor = 'pink';
 }
 btnFeriado.addEventListener('click', corFeriado);
+
+
+// let btnFeriado = document.querySelector('#btn-holiday');
+// function corFeriado() {
+//   if (btnFeriado.corFeriado === true) {
+//     btnFeriado.removeAttribute('disabled');
+//   } else {
+//     btnFeriado.setAttribute('disabled', 'disabled');
+//   }
+//   let feriados = document.querySelectorAll('.holiday');
+//   let botaoFeriado = document.getElementById('btn-holiday');
+//   feriados.s = 'pink';
+//   //console.log(feriados);
+// }
+// btnFeriado.addEventListener('click', corFeriado);
 
 
 
