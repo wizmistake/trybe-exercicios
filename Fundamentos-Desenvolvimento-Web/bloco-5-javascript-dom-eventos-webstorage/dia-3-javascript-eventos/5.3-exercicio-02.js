@@ -92,7 +92,9 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // ############################### Escreva seu código abaixo ###############################
+
 // Questão 1 - ok
+
 function createDaysOfTheMonth() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   let monthDays = document.querySelector('#days');
@@ -114,41 +116,37 @@ createDaysOfTheMonth();
 
 
 // Questão 2 - ok
-valor = "Feriados";
+
 function botaoFeriado(valor) {
-  let botaoFeriado = document.createElement('input');
-  botaoFeriado.type = 'button';
-  botaoFeriado.value = 'Feriados';
+  let botaoFeriado = document.createElement('button');
   botaoFeriado.id = 'btn-holiday';
-  //botaoFeriado.style.backgroundColor = 'rgb(238,238,238)';
+  botaoFeriado.innerHTML = valor;
   let botoes = document.querySelector('.buttons-container');
   botoes.appendChild(botaoFeriado);
 }
-botaoFeriado();
+botaoFeriado('Feriados');
 
 
-// Questão 3 - RESOLVER DEPOIS
-let btnFeriado = document.querySelector('#btn-holiday');
-function corFeriado(event) {
+// Questão 3 - ok
+
+function corFeriado() {
+  let btnFeriado = document.querySelector('#btn-holiday');
   let feriados = document.querySelectorAll('.holiday');
-  feriados.style.backgroundColor = 'pink';
+  function trocaCor() {
+    for (let i = 0; i < feriados.length; i += 1) {
+      if (feriados[i].style.backgroundColor === 'pink') {
+        feriados[i].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        feriados[i].style.backgroundColor = 'pink';
+      }
+    }
+  }
+  btnFeriado.addEventListener('click', trocaCor);
 }
-btnFeriado.addEventListener('click', corFeriado);
+corFeriado();
 
 
-// let btnFeriado = document.querySelector('#btn-holiday');
-// function corFeriado() {
-//   if (btnFeriado.corFeriado === true) {
-//     btnFeriado.removeAttribute('disabled');
-//   } else {
-//     btnFeriado.setAttribute('disabled', 'disabled');
-//   }
-//   let feriados = document.querySelectorAll('.holiday');
-//   let botaoFeriado = document.getElementById('btn-holiday');
-//   feriados.s = 'pink';
-//   //console.log(feriados);
-// }
-// btnFeriado.addEventListener('click', corFeriado);
+// Questão 4 - 
 
 
 
