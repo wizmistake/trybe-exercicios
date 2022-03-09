@@ -146,8 +146,16 @@ function corFeriado() {
 corFeriado();
 
 
-// Questão 4 - 
+// Questão 4 - ok
 
+function sexta(valor) {
+  let botaoSexta = document.createElement('button');
+  botaoSexta.id = 'btn-friday';
+  botaoSexta.innerHTML = valor;
+  let botoes = document.querySelector('.buttons-container');
+  botoes.appendChild(botaoSexta);
+}
+sexta('Sexta-feira');
 
 
 
