@@ -158,5 +158,25 @@ function sexta(valor) {
 sexta('Sexta-feira');
 
 
+// Questão 5 - ok
 
+function sextou() {
+  let btnSexta = document.querySelector('#btn-friday');
+  let allSexta = document.querySelectorAll('.friday');
+  let guardaValorSexta = [];
+  for (let i = 0; i < allSexta.length; i += 1) {
+    guardaValorSexta[i] = allSexta[i].innerHTML;
+  }
+  function textoSexta() {
+    for (let i = 0; i < allSexta.length; i += 1) {
+      if (allSexta[i].innerHTML === guardaValorSexta[i]) {
+        allSexta[i].innerHTML = 'SEXTOU!';
+      } else {
+        allSexta[i].innerHTML = guardaValorSexta[i];
+      }
+    }
+  }
+  btnSexta.addEventListener('click', textoSexta);
+}
+sextou();
 
