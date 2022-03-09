@@ -180,3 +180,26 @@ function sextou() {
 }
 sextou();
 
+
+// Questão 6 - ok
+
+function zoomIn() {
+  diasMes = document.querySelector('#days');
+  function aumentar(event){
+    event.target.style.fontSize = '50px';
+  }
+  diasMes.addEventListener('mouseover', aumentar);
+}
+function zoomOut() {
+  diasMes = document.querySelector('#days');
+  function diminuir(event){
+    event.target.style.fontSize = '20px';
+  }
+  diasMes.addEventListener('mouseout', diminuir);
+}
+zoomIn();
+zoomOut();
+
+
+// Questão 7 - 
+
