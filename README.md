@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [ ] 3-4: _HTML Semântico_
-- [ ] 3-5: _[Projeto - Lessons Learned]()_
+- [x] 3-5: _[Projeto - Lessons Learned](https://github.com/tryber/sd-020-a-project-lessons-learned/tree/akbar-almeida-lessons-learned)_
 ​
 ##### Bloco 4: Introdução à JavaScript & Lógica de Programação
 ​
@@ -41,9 +41,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _Fundamentos - JavaScript - Projetos_
+- [x] 5-5: _Fundamentos - JavaScript - Projetos_
 - [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-020-a-project-pixels-art/tree/akbar-almeida-project-pixels-art)_
-- [ ] 5-6: _[Projeto - Lista de tarefas]()_
+- [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-020-a-project-lessons-learned/tree/akbar-almeida-lessons-learned)_
 - [ ] 5-7: _[Projeto - Meme Generator]()_
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
@@ -55,11 +55,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Trybewarts]()_
+- [x] 6-6: _[Projeto - Trybewarts](https://github.com/tryber/sd-020-a-project-trybewarts/tree/akbar-almeida-trybewarts)_
 ​
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 ​
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [ ] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [ ] 7-3: _Primeiros passos em Jest_
 - [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
