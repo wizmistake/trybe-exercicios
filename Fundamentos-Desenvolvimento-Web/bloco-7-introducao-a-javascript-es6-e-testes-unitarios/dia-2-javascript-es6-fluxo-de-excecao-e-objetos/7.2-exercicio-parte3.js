@@ -51,3 +51,14 @@ const tamanhoObjeto = (objeto) => {
   console.log(`O tamanho do objeto é ${tamanho}`);
 }
 tamanhoObjeto(lesson1);
+
+/*
+  4. Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+*/
+
+const valoresObjeto = (objeto) => {
+  for (let valor in objeto) {
+    console.log(objeto[valor]);
+  }
+}
+valoresObjeto(lesson2);
