@@ -111,3 +111,19 @@ const validaObjeto = (objeto, chave, valor) => {
 }
 validaObjeto(lesson3, 'turno', 'noite');
 validaObjeto(lesson3, 'materia', 'Maria Clara');
+
+/*
+  Bônus 1. Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+*/
+
+const alunosMatematia = (objeto) => {
+  let alunos = 0;
+  const chaves = Object.keys(objeto);
+  for (let index in chaves) {
+    if (objeto[chaves[index]].materia === 'Matemática') {
+      alunos += objeto[chaves[index]].numeroEstudantes;
+    }
+  }
+  console.log(alunos);
+}
+alunosMatematia(allLessons);
