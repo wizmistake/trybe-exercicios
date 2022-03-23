@@ -92,3 +92,22 @@ const valorChave = (objeto, index) => {
   console.log(valor[index]);
 }
 valorChave(lesson2, 0);
+
+/*
+  8. Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+*/
+
+const validaObjeto = (objeto, chave, valor) => {
+  const entradas = Object.entries(objeto);
+  let texto = '';
+  for (let index in entradas) {
+    if (entradas[index][0] === chave && entradas[index][1] === valor) {
+      texto = 'true';
+    } else {
+      texto = 'false';
+    }
+  }
+   console.log(texto);
+}
+validaObjeto(lesson3, 'turno', 'noite');
+validaObjeto(lesson3, 'materia', 'Maria Clara');
