@@ -28,7 +28,7 @@ const lesson3 = {
  }
  turno();
 
- /*
+/*
   2. Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 */
 
@@ -38,3 +38,16 @@ const listarObjeto = (objeto) => {
   }
 }
 listarObjeto(lesson3);
+
+/*
+  3. Crie uma função para mostrar o tamanho de um objeto.
+*/
+
+const tamanhoObjeto = (objeto) => {
+  let tamanho = 0;
+  for (let key in objeto) {
+    tamanho += 1;
+  }
+  console.log(`O tamanho do objeto é ${tamanho}`);
+}
+tamanhoObjeto(lesson1);
