@@ -27,4 +27,14 @@ const lesson3 = {
    console.log(lesson2);
  }
  turno();
- 
+
+ /*
+  2. Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+*/
+
+const listarObjeto = (objeto) => {
+  for (let key in objeto) {
+    console.log(key);
+  }
+}
+listarObjeto(lesson3);
